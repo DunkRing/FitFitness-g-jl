@@ -1,2 +1,4 @@
 App.xbf
-MainPage.xbf
+MVVM\View\CalculatorVeiw.xbf
+MVVM\View\LegView.xbf
+MVVM\View\MainPage.xbf

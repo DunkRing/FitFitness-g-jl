@@ -95,9 +95,20 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataStorage\CalculatorDataStorage.cs" />
     <Compile Include="DataStorage\LegDataStorage.cs" />
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="MVVM\View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\Model\CalculatorModel.cs" />
+    <Compile Include="MVVM\Model\LegModel.cs" />
+    <Compile Include="MVVM\ViewModel\CalculatorViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\LegViewModel.cs" />
+    <Compile Include="MVVM\View\CalculatorVeiw.xaml.cs">
+      <DependentUpon>CalculatorVeiw.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\LegView.xaml.cs">
+      <DependentUpon>LegView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -123,9 +134,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
+    <Page Include="MVVM\View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MVVM\View\CalculatorVeiw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\LegView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
